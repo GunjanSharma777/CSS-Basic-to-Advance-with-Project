@@ -1,0 +1,256 @@
+
+
+
+-CSS means Cascacding Style Sheet. <br>
+-Three way to insert css: <br>
+    internal css, external css, inline css. <br>
+-For best practice CSS must be write in HEAD tag. <br>
+-We can use parallel all three css. first priority inline css. <br>
+-Can use multiple style in internal & external css but last one give priority. <br>
+- Three type of Selector: <br>
+Element Selector(represent with normal tag name), id Selector(represent with # before id name in css file), class selector(represent with . before class name in css file), pseudo class(:), pseudo element(::) <br>
+-In all three selector id selector give first priority then secound priority give to class then less prioritty give to element when we use all three selector at same time. <br>
+-If we use more than one same name of id then priority give in order of last one written id. <br>
+-Comment in CSS: USE /*.... */, use in multiline comment also. <br>
+-Color in CSS : Predefiend color(140 predefiend color), RGB(red, green, blue), RGBA(red, green, blue, alpha), HEX, HSL(hue, saturation, lightness), HSLA(hue, saturation, lightness, alpha for transperansy) <br>
+..RGB color value between o to 255. <br>
+..black: rgb(0,0,0), white: rgb(255,255,255), red: rgb(255,0,0), green: rgb(0, 255, 0), blue: rgb(0,0,255) <br>
+....RGBA color parameter between 0.0(full transparent) to 1.0(no transparent), use like this rgba(255, 150, 120, 0.5) <br>
+......HEX color code #rrggbb, hexadecimal value between 00 and ff(0 to 255) <br>
+......red: #ff0000, black: #000000, white: #ffffff <br>
+........HSL: hue is degree of color between 0 to 360(0 is red, 120 is green, 240 is blue) <br>
+........saturation: it is percentage value between 0(gray shade) to 100%(full color) <br>
+........Lightness: it is percetage value bw 0(black) to 100%(white) <br> ex.: red: hsl(0, 100%, 50%) <br>
+-Box model: a box content margin then border then padding then content.we only change width and height of content. <br>
+-Their are 4 state of link: Link, Visited, Hower, Active <br>
+-CSS split is used to spit single image in multiple part. it is only used in background image. For split an image must know the width of all image which you would split. <br> 
+-CSS Function: in CSS we also use function such as url(), linear-gradiant(), var(), cal() and many more this all are function of css. <br>
+-block vs inline vs inline-block:  <br>
+ .....block: 1. strt with new line. <br>
+            2. have full width. <br>
+            3. can change height and width. <br>
+......inline: 1. not strt with newe line. <br>
+              2. have no  width. <br>
+              3. not change width and height. <br>
+......inline block: 1. not srt with new line. <br>
+                    2. have no width. <br>
+                    3. can change width and width. <br>
+
+-Their are different pposition element: static(default), relative, fixed(if we screen screen all element move but fixedd element not moved), absolute. <br>
+-jb tk element static me h position element nhi hai, baki property me position element ha. relative: isme element apni jgh ko nhi chodta hai, apni jgh pr kisi ko aane nhi deta lekin absolute or fixed apni jgh chood dette hai bhle top, bottom, left, right specify nhi kiya ho or element ka calculation screen ko corner se strt krta hai. absolute me apne parent ke nearest se calculate krega or kbhi koi parent nhi hai to windowa ke corner se strt krega. <br>
+-z-index is used to give priority of any block or para. it used for layer of any block. gengrally z-index is range bw 0 to 1 but not always. <br>
+-attribute means which is inclue with equal to and contain in tag. <br>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+-This is example of External CSS. <br>
+- This is example of element selector where we select any element(i.e. h1, p) to give style.<br> <link rel="stylesheet" href="style.css" type="text/css ">
+
+-This is example of internal CSS. <br>
+    <style>
+        .h2-blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>demo 1</h1>
+- hr tag is used for seperator line. <hr>
+    <h2 class="h2-blue">demo 2</h2>
+    <hr>
+- This is example of inline CSS.= <h3 style="color: pink;">demo 3</h3>
+    <hr>
+- This is example of id selector.= <h4 id="h4"> demo 4</h4>
+<hr>
+- This is example of CLass Selector.= <h5 class="text-color">demo 5</h5> 
+<hr>
+
+<div id="div_background">
+<p id="background_effect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, totam tenetur dolorem rerum veritatis cumque repudiandae nam cum beatae sequi, consequatur suscipit eaque deserunt esse voluptates praesentium? Dolores officiis, delectus doloremque, optio quas ut excepturi deserunt ipsam error, molestiae est enim laudantium omnis. Error ea saepe nam sint porro, velit dolor reprehenderit dolorem nostrum aliquam soluta id nihil accusantium accusamus quaerat placeat iusto voluptatibus mollitia? Hic, similique voluptatum aut aliquid doloribus explicabo? Cumque in unde pariatur eius dolores eveniet maiores deserunt, ad perferendis possimus ea magni, commodi quaerat at quis aliquam dignissimos ipsa maxime ab laborum mollitia suscipit? Eveniet id at, doloremque repellendus, excepturi nisi quaerat esse voluptates labore ab in, deleniti quidem. Eaque placeat sequi nesciunt, dolor quam, ut mollitia magnam ratione asperiores, enim atque temporibus voluptate doloremque saepe incidunt labore? Explicabo laudantium aperiam consequatur alias fugit officia, amet facere voluptates impedit, laborum beatae eligendi harum necessitatibus eum expedita dolore iure! Est doloremque excepturi, atque blanditiis velit nesciunt ut recusandae culpa sunt obcaecati dicta vero quo suscipit adipisci optio ad molestiae. Odit similique, nesciunt obcaecati nostrum ipsam corporis neque modi? Esse quidem dignissimos cupiditate nemo facilis incidunt? Ipsum, error maiores at ipsa ipsam tempore voluptas mollitia voluptatem nostrum voluptate ducimus eius quidem, optio, illo eos cum? Iure quod obcaecati placeat reprehenderit accusamus officia quaerat quidem saepe. Voluptates excepturi error rerum cupiditate. Neque culpa beatae, esse nihil eius blanditiis eveniet. Itaque ipsum ipsa, exercitationem error, quos animi perferendis dolorum consequatur omnis, explicabo eligendi perspiciatis hic excepturi ad consequuntur quod cumque. Nulla maiores fugiat modi minima nam beatae libero, nesciunt porro. Cumque tempora quam, laudantium officia earum molestiae, ullam est atque architecto pariatur qui aut voluptatem corporis. Eligendi facere voluptatibus obcaecati numquam quibusdam nam voluptate laudantium doloremque sunt recusandae molestiae ullam quis impedit rem delectus at asperiores incidunt quam quos necessitatibus aliquam, provident illum! Ipsam, porro non. Qui unde, officia quisquam nam necessitatibus animi! Explicabo, esse eligendi minus iure sit ea accusantium inventore numquam cumque exercitationem quia sint harum mollitia rem quam voluptates quas aspernatur iste error nemo ducimus expedita? Maxime aliquam magni deserunt ratione assumenda aspernatur eos aut, ex nam neque sit asperiores ducimus qui quaerat. Officiis aperiam quis nemo eius expedita quas voluptatem impedit sequi incidunt porro similique iure enim exercitationem vitae, ducimus distinctio eos nostrum temporibus ut odio harum. A perspiciatis, iure fugit vel fugiat reprehenderit eius, in corrupti impedit ea nostrum molestiae voluptates quasi aperiam! A voluptas, temporibus veritatis dolores doloribus qui dolor unde velit, perspiciatis voluptatum vel est eos quis? Sequi tempora eos dolore. Libero incidunt eum veniam rerum, ex ratione blanditiis porro officia voluptatibus. Possimus sequi recusandae vero praesentium, veritatis dolor? Dignissimos laudantium deserunt, perferendis cupiditate sequi illo animi dolores quasi ea assumenda maiores rerum saepe minima eaque fuga, cum, velit laboriosam porro sunt optio officia praesentium qui nostrum. Magnam ipsum voluptatum sequi, facere neque ab recusandae, molestiae magni rerum perspiciatis ullam quos, nemo exercitationem in officia aliquid porro ex ratione eveniet vitae harum distinctio quas molestias. Iure architecto tempora rem consequuntur asperiores porro cum.</p>
+</div>
+
+<p id="text_border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, alias sint sapiente quos distinctio quibusdam temporibus earum, accusamus praesentium odio ratione nostrum. Debitis soluta quos officia, minima necessitatibus dolorem laboriosam assumenda omnis accusamus eligendi aspernatur eaque possimus voluptatum ut esse adipisci. Voluptatum, reiciendis. Quo nobis reprehenderit consequuntur sint qui neque, accusantium non fuga libero dolorum, fugiat modi optio mollitia provident rem temporibus, quae facilis iste nesciunt. Et ipsa quia molestiae odit eius doloribus expedita, reprehenderit sit mollitia, ipsam rerum. Sed eveniet, expedita reprehenderit eaque, quisquam, repudiandae delectus quibusdam quae provident vel praesentium adipisci deleniti itaque doloremque cumque omnis suscipit molestiae.</p>
+
+<p id="text_width_height" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum saepe soluta fugiat possimus, consequuntur sapiente cumque porro. Sunt veritatis ipsa aut pariatur commodi velit autem a distinctio porro. Autem porro cumque fuga nam nostrum mollitia quasi illum voluptatibus non, provident officia tempore iste eaque debitis quibusdam pariatur dolores consequatur eligendi magnam ex, asperiores corporis excepturi. Aperiam dolorum eius modi sequi laudantium voluptate eligendi quod, nemo in a aut expedita? Distinctio, maxime delectus aspernatur, consectetur neque cumque ipsum voluptatem sunt iste placeat eligendi perspiciatis pariatur omnis! Voluptate sint, sed facilis obcaecati magni possimus voluptatem qui ad in amet esse quam.</p>
+
+<p id="text_padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aspernatur porro voluptatibus pariatur aut, tempore dignissimos officia impedit recusandae aperiam ad temporibus sed eius possimus dolore beatae eaque dolorum fugiat repudiandae reprehenderit eum excepturi explicabo! Doloribus reprehenderit minima laboriosam ab a repellat et rem odit quibusdam, expedita cum rerum architecto.</p>
+
+<p class="margin_text" id="text_margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias animi nostrum maiores quam quibusdam deleniti. Facere voluptate odit ad fuga.</p>
+
+<p class="margin_text" id="secound_margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, a architecto obcaecati nemo temporibus nobis? Aperiam blanditiis vel vitae eaque!</p>
+
+<h3 id="text_editing">Lorem ipsum dolor sit amet.</h3>
+
+<a href="https://whatsappweb.com" id="text-link">This is Link style Exapmle. Click Me..WhatappWeb</a>
+
+<p id="text-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi reprehenderit sapiente tenetur, nesciunt numquam culpa. In corporis officiis ad.</p>
+
+<div id="parent">
+    Lorem, ipsum dolor.
+    <div id="child">
+        Lorem ipsum dolor sit.
+    </div>
+</div>
+
+<div id="cursor-effect"> <h2>Lorem ipsum dolor sit.212114585</h2></div>
+
+<p id="box-effect">Lorem ipsum dolor sit.</p>
+
+<div id="opacity-effect"></div>
+<div id="color-box"></div>
+
+<div><img src="image.jpeg" alt="" id="image-filter"></div>
+
+<div id="gradiant-effect"></div>
+
+<p id="overflow-effect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis quasi consequuntur omnis perspiciatis, commodi laborum velit dolorum, est saepe vero, itaque veniam assumenda repudiandae? Consectetur, sit. Nam minus similique consequuntur rerum, veritatis maiores expedita nemo magnam non dicta aspernatur est necessitatibus repellendus ullam voluptas laboriosam ipsam velit ratione quo? Excepturi repellat quod ipsum. Blanditiis soluta aspernatur autem non esse obcaecati iure omnis eveniet ullam quis? Sequi, ipsa voluptate eos ab at iusto soluta sint quidem magni illum, cum cumque, quis mollitia magnam laudantium incidunt atque. Vitae officia praesentium quae a qui reiciendis aliquid sequi hic cupiditate aperiam, ipsum quos beatae voluptates possimus quam, aspernatur optio est corporis non molestiae, omnis nobis. Animi consequatur, corrupti inventore quas porro eligendi ducimus saepe ipsa repellat, qui quisquam unde minima minus provident voluptatibus vitae harum. Qui eos molestiae architecto rem quaerat quis sunt aliquid, iusto ipsam assumenda officiis maxime suscipit vel ipsa distinctio sapiente doloribus necessitatibus fugit veniam nam voluptas facilis obcaecati id! Suscipit amet voluptas voluptates. Illum ipsum atque optio unde, autem ut laboriosam consectetur praesentium cumque sint impedit, recusandae repudiandae earum at dolorum! Recusandae ad aliquam hic provident natus fuga quidem. Et voluptatem, accusantium nesciunt assumenda temporibus praesentium! Dolores facere temporibus amet quaerat sint quam veritatis provident, est doloremque blanditiis modi, consequatur aliquam assumenda alias aliquid incidunt sed dolorem laborum accusamus maiores culpa perferendis dignissimos recusandae? Exercitationem, illum harum? Pariatur quis provident, quam molestias eligendi, praesentium nesciunt placeat voluptatum iste unde iure sit suscipit a quaerat. Earum numquam soluta maiores eaque.</p>
+
+<div id="list-effect">
+<ol id="order-list">
+    <li>i</li>
+    <li>am</li>
+    <li>gunjan</li>
+</ol>
+<ul id="unorder-list">
+    <li>hello</li>
+    <li>dear</li>
+    <li>character</li>
+</ul>
+</div>
+
+<table id="table-effect">
+    <caption id="caption-effect">Fruits detail</caption>
+<tr class="row-effect">
+    <th class="head-effect">fruit</th>
+    <th class="head-effect">class</th>
+    <th class="head-effect">section</th>
+</tr>
+<tr class="row-effect">
+    <td class="data-effect">bananan is fruit</td>
+    <td class="data-effect">10</td>
+    <td class="data-effect">A</td>
+</tr>
+<tr class="row-effect">
+    <td class="data-effect">mango</td>
+    <td class="data-effect">7 is class</td>
+    <td class="data-effect">B</td>
+</tr>
+<tr class="row-effect">
+    <td class="data-effect">graphs</td>
+    <td class="data-effect">2 is class name</td>
+    <td class="data-effect">C</td>
+</tr>
+</table>
+
+<div id="function-effect">part hard!!</div>
+<div id="varfunction-effect">hello</div>
+
+<div id="parent-class">
+    I am parent class.
+    <p id="red-id">i am red</p>
+    <p id="initial">i am blue</p>
+    <p id="inherit">i am pink</p>
+</div>
+
+<img src="peafork.jpeg" id="object-fit-effect" alt="">
+
+<p class="psudo-effect">i</p>
+<p class="psudo-effect">am</p>
+<p class="psudo-effect">gunjan</p>
+<p class="psudo-effect">sharma</p>
+<p class="psudo-effect">my</p>
+<p class="psudo-effect">dear</p>
+
+<h1>my heading</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, aliquam. Modi eius deleniti cumque nobis ab aliquam culpa alias quidem hic excepturi ex illo, aliquid explicabo voluptatibus dolor eos nihil quos a rem, ullam quisquam impedit nam. Repellat ipsa maxime accusantium provident, distinctio rem eum, voluptatum velit enim ipsam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptates odio consectetur incidunt rerum saepe itaque minima labore animi quia.</p>
+
+<div class="inline-block-effect" id="inline-block-effect"> demo 1</div>
+<div  class="inline-block-effect">demo 2</div>
+
+<div id="block-position-parent">
+    <div id="block-position-1"></div>
+    <div id="block-position-2"></div>
+    <div id="block-position-3"></div>
+</div>
+
+<ul id="flot-char-concept">
+    <li id="flot-char-concept1">Home</li>
+    <li id="flot-char-concept2"> Shop All</li>
+    <li id="flot-char-concept3"> Contact As</li>
+    <li id="flot-char-concept4"> Email: gunjanshar124@gmial.com</li>
+</ul>
+
+<div id="clear1"></div>
+<div id="clear2"></div>
+<div id="clear3"></div>
+
+<div id="transform-effect">Button</div>
+
+<div id="transition-effect"></div>
+
+<div id="animation-effect"></div>
+
+<meta charset="UTF-8" > it is used for responsive website.
+<meta name="viewport" content="width=device-width, inital-scale=1.0" >
+
+<img src="peafork.jpeg">
+<p id="viewport-effect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, rerum alias aut velit quibusdam hic doloremque placeat cumque repellendus aspernatur possimus beatae voluptate tempora maxime natus esse vero modi atque. Obcaecati architecto veritatis dolores. Eos perspiciatis aspernatur distinctio ullam explicabo consectetur laborum exercitationem? Reiciendis animi voluptate provident sint mollitia nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio natus consequuntur unde porro culpa minus sint deleniti impedit voluptates, hic delectus nostrum magni obcaecati? Rem tempora suscipit minus tenetur, quia quibusdam placeat magnam odit labore dicta. Vero eveniet omnis magni porro alias error ullam adipisci qui ut sapiente eligendi voluptas nobis, quas incidunt dolorem repellendus ipsa iste! Accusantium, itaque magni ea recusandae nulla obcaecati molestias! Nulla voluptates temporibus incidunt repellat illum accusantium! Suscipit id error earum eum, magnam tempora temporibus adipisci aut sed aspernatur placeat commodi voluptates. Quidem labore ratione error! Culpa omnis aliquid deleniti odio aut quidem ipsa.</p>
+
+<div id="reponsive-effect"> Demo 1 </div>
+<div  id="responsive-effect1"> Demo 2</div>
+
+<div>
+<h1>Selector</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae in obcaecati odit repellendus et quo sint modi, explicabo, nemo consectetur eveniet? Numquam voluptas necessitatibus sunt omnis soluta ipsum consectetur. Ipsum architecto aperiam voluptatem laboriosam, quo odit soluta neque temporibus modi mollitia odio quia eveniet! Earum magnam nobis accusantium nulla.
+</p>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li><a href="http//www.instagram.com">instagram</a></li>
+        <a href="http//www.google.com">Google</a>
+        <li>list 4</li>
+        <li name="attribute-list">list 5</li>
+        <li>list 6</li>
+        
+    </ul>
+    <a href="http//whatsapp.com">WhatappWeb </a>
+</div>
+
+<div>
+    <h1 id="coloum-effect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dignissimos.</h1>
+    <p id="coloum-effect-id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam voluptatibus nulla eligendi nihil consequatur, vero autem dolore ex quia et cupiditate ducimus officiis dicta ipsum, tenetur unde veritatis ratione dolorem? Rem nobis debitis labore beatae a quod, animi nisi reprehenderit laboriosam sed cumque fugit suscipit sint! Cupiditate, inventore voluptas?</p>
+</div>
+
+<div id="flex-parent">
+    <div class="flex-class" id="one">one</div>
+    <div class="flex-class" id="two">two</div>
+    <div class="flex-class" id="three">three</div>
+
+</div>
+
+<div id="grid-parent">
+    <div id="grid-one" class="grid-class">Menu</div>
+    <div id="grid-two" class="grid-class">s</div>
+    <div id="grid-three" class="grid-class">Main Content</div>
+    <div id="grid-four" class="grid-class">Side Bar</div>
+    <div id="grid-five" class="grid-class">Footer</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+

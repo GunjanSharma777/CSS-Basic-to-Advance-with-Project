@@ -1,0 +1,691 @@
+
+/*element selector*/
+h1{
+    color: brown;
+}
+
+/*id selector*/
+#h4{
+    color: chartreuse;
+}
+
+/* classs selector*/ 
+.text-color{
+    color: rgb(227, 171, 18);
+}
+
+/* Background effect */
+#div_background{
+    background-color: red;
+    padding:5px;
+}
+
+#background_effect{
+        background-color: pink;
+        background-image: url(image.jpeg); /* also use secound image with coma url(transprent1.jpeg)*/
+        background-position:bottom;  /* also use secound image position with coma url(transprent1.jpeg)*/
+        background-repeat:no-repeat, no-repeat; 
+        background-size:cover;
+        background-attachment:fixed; /* use different attachment for image effect*/
+}
+
+/* Border effect */
+#text_border{
+        border-style: outset;  /*border-style:solid, inset, dashed*/
+        border-radius: 0px 10px 20px 30px; /*top, right, bottom, left(clock wise)*/    
+        border-color:red blue greenyellow pink; /*top, right, bottom, left(clock wise)*/
+        border-top-left-radius:10px;
+        border-top-right-radius:100px;
+        border-width:5px 10px 12px 7px ;
+}
+
+/*width & height*/
+#text_width_height{
+        width:100%;
+        height:20%;
+        max-width:80%;
+        min-width:40%;
+        max-height: 80px;
+        min-height: 20px;   
+}
+
+/*padding*/
+#text_padding{
+    border-style:solid;
+    padding-top:80px;
+    padding-right:50px;
+    padding-bottom:20%;
+    padding-left:10%;
+}
+
+/*margin*/
+.margin_text{
+    border-style:solid;
+}
+
+#text_margin{
+    margin-top:80px;
+    margin-left:40px;
+    margin-bottom:100px;
+    margin-right:20%;
+}
+
+#secound_margin{
+    margin-top:-110px; /*margin can be negitive*/
+}
+
+/*text effect*/
+#text_editing{
+    text-align:center;
+    text-decoration: 2px solid underline red;
+    text-transform: uppercase;  /*lowercase, capitalize:for first character in capital word*/
+    text-indent:40%;
+    text-decoration-line:overline; /*underline, line through*/
+    text-decoration-style:double;
+    text-decoration-thickness: 10%;
+    text-shadow: 3px 20px 2.5px deeppink;
+    word-wrap: 40%;
+    writing-mode:vertical-rl;
+}
+
+/*Link state*/
+#text-link{
+    text-decoration: none;
+}
+
+a:link{
+    color:red;
+}
+
+a:visited{
+    color:yellowgreen;
+}
+
+a:hover{
+    color:darkgoldenrod;
+}
+
+a:active{
+    color:darkturquoise;
+}
+
+/*font effect*/
+@font-face{
+    font-family: abc;
+    src:url(Bodoni_Moda_SC,Ga_Maamli,Playwrite_CL/Ga_Maamli/GaMaamli-Regular.ttf);
+}
+
+#text-font{
+    font-size:50px;
+    font-weight:bold;
+    font-style: oblique;
+    font-variant:small-caps;
+    font-family:abc;
+}
+
+/*Text height & weight*/
+#parent{
+    font-size:10vw;
+}
+
+#child{
+    font-size:2vw;
+}
+
+/*cursor effect*/
+#cursor-effect{
+    border-style: solid;
+    cursor:crosshair; /*use different cursor style*/
+}
+
+/*Box effect*/
+#box-effect{
+    font-size:20px;
+    border-style:solid;
+    border-color:red;
+    text-align:center;
+    margin:10%;
+    padding:10px;
+    border-width:2px;
+    width:fit-content;
+    background-color:aqua;
+    box-shadow:5px 7px 7px black; /* x axis, y axis, shadow effect, shadow size, shadow color*/
+}
+
+/*opacity-effect*/
+#opacity-effect{
+    height:200px;
+    width:200px;
+    background-color:red;
+}
+
+#color-box{
+    height:200px;
+    width:200px;
+    margin:-50px;
+    background-color:blue;
+    opacity:0.5; /*opacity means transprency in color, range between 0 to 1*/
+}
+
+/*image-filter*/
+#image-filter{
+    margin-top:10%;
+    filter: contrast(10%); /*can use different type of filter in image like we use in mobile*/
+}
+
+/*gradiant-effect*/
+#gradiant-effect{
+    margin-top:20px;
+    height: 100px;
+    border-style:solid;
+    background-image: linear-gradient(to bottom right, red, blue, green, pink); /*in place of linear, use radial. in place of to bottom right, use to bottom left or circle or degree(120deg) */
+}
+
+/*overflow-effect*/
+#overflow-effect{
+    height:100px;
+    weight:70px;
+    margin-top:10px;
+    border-style: solid;
+    overflow:auto;
+    resize:both; /*for resize any block or div must have overflow property with auto, use resize property with horizontal or verticle or none*/
+}
+
+/*order list & unorder list*/
+#order-list{
+
+    list-style-image:url(aerrow1.jpeg); /*list-style-type: upper-alpha;*/
+}
+#unorder-list{
+    list-style-image:url(green_aerrow.png);
+}
+
+#list-effect{
+    border-style: solid;
+}
+
+/*table row & coloum effect*/
+#caption-effect{
+    border:1px solid;
+}
+
+#table-effect{
+    margin-top:20px;
+    border:1px solid;
+    table-layout:auto;
+    border-collapse:separate; /*or collapse*/
+}
+
+.head-effect{
+    border:1px solid;
+}
+
+.data-effect{
+    border:1px solid;
+}
+
+/*function effect*/
+:root{      /*variable function*/
+    --border-color:black;
+    --text-color:white;
+    --primary-color:red;
+}
+
+#function-effect{
+    border: 10px var(--border-color);  /*here use var() function*/
+    margin-top:10px;
+    width:calc(100% - 100px); /*best suit for responsive webpage*/
+    height:200px;
+    background-color:var(--primary-color);    
+}
+
+#varfunction-effect{
+    border: 5px red solid;
+    margin-top:10px;
+    width:calc(100% - 100px); /*best suit for responsive webpage*/
+    height:200px;
+    background-color:var(--primary-color);
+}
+
+/*initial & inherit effect*/
+#parent-class{
+    color:brown;
+}
+
+#red-id{
+    color:red;
+}
+
+#initial{
+    color:initial; /*initial means by default css ne color select kr k rkha ho vhi color aayga*/
+}
+
+#inherit{
+    color:inherit;  /*inherit means jo color parent class ka rhega vhi select hoga*/
+}
+
+/*object-fit-effect*/
+#object-fit-effect{
+    border:2px solid red;
+    width:300px;
+    height:500px;
+    object-fit:cover; /*it used to change the area of image*/
+}
+
+/*pseudo class effect*/
+p:nth-child(3){  /*abhi hmne more than one p tag le rkhe hai isleye abhi  yh code proper run anhi hoga*/
+    color:blue; /*yadi single p ya or koi tag hota pure file me to direct uss tag ka name or sath me : or first-child or last-child or nth-child(koi bhi no.) le kr hmm property ko run kr skte hai*/
+}
+
+/*pseudo object effect*/
+::selection{
+    background:red;
+    color:chartreuse;
+}
+
+h1::first-line{ /*first-line, first-letter, before, after, on selection*/
+    color:blueviolet;
+}
+
+p::first-letter{
+    font-size: 30px;
+    color:red;
+}
+
+p::before{
+    content:'demo';
+}
+
+p::after{
+    content:' different demo';
+    color:brown;
+}
+
+/*diference in block, inline, inline block*/
+.inline-block-effect{
+    border: 2px solid blueviolet;
+    color:red;
+    height:200px;
+    width:200px;
+    display:inline-block;
+}
+
+#inline-block-effect{
+    /*display:none;*/
+    /* visibility:hidden; */ /*display and visilibility both are same*/
+}
+
+/*position element*/
+#block-position-parent{
+    border:solid;
+    width:500px;
+    padding:100px;
+    margin:50px
+}
+
+#block-position-1{
+    background-color:orange;
+    height:100px;
+    width:100px;
+    display:inline-block;
+    position:relative;
+    z-index:1; /*z-index is used to give priority of any block or para*/
+}               /*gengrally z-index is range bw 0 to 1 but not always*/
+                /*z-index(only used when pposition is relative or fixed or fixed)*/
+
+#block-position-2{
+    background-color:antiquewhite;
+    height:100px;
+    width:100px;
+    display:inline-block;
+    position:relative;
+    right: 70px;
+    bottom:-80px;
+    z-index:0;
+}
+
+#block-position-3{
+    background-color:greenyellow;
+    height:100px;
+    width:100px;
+    display: inline-block;
+    position: relative; /*position: fixed impotant*/ /*also try relative, absolute*/
+    right: 230px;
+    bottom:50px;
+    z-index:1;
+}
+
+/*flot-char-concept1*/
+#flot-char-concept{
+    background-color:skyblue;
+    overflow:auto;
+}
+
+#flot-char-concept1{
+    list-style-type: none;
+    float:left; /*float shift content in left, right*/
+    padding:5px 10px;
+}
+
+#flot-char-concept2{
+    list-style-type:none;
+    float:left;
+    padding:5px 10px;
+}
+
+#flot-char-concept3{
+    list-style-type:none;
+    float:left;
+    padding:5px 10px;
+}
+
+#flot-char-concept4{
+    list-style-type:none;
+    float:inline-end;
+    padding:5px 10px;
+}
+
+#char-concept{
+    border:1px solid;
+    height:auto;
+    overflow:auto;
+}
+
+#char-img1{
+    float:left;
+    
+}
+
+#char-img2{
+    float:right;
+    clear:left;
+}
+
+#clear1{
+    width: 80%;
+    height:20%;
+    background-color:orange;
+    float:right;
+}
+
+#clear2{
+    height:10%;
+    background-color:greenyellow;
+    width:20%;
+    float:left;
+    
+}
+
+#clear3{
+    height:5%;
+    background-color:blue;
+    clear:both;
+}
+
+/*2D transfrom*/
+#transform-effect{
+    margin-top:5px;
+    padding:5px 10px;
+    width:50px;
+    height:15px;
+    background-color:palevioletred;
+}
+
+#transform-effect:hover{
+    transform: rotate(20deg);
+    background-color:blue;
+}
+
+/*Transition effect*/
+#transition-effect{
+    margin:10%;
+    width:20%;
+    height:20%;
+    background-color: cornflowerblue;
+    transition-property: width, height, background-color;  /*yha hme mention vh element mention krna hai jipr effect dalna hai*/
+    transition-duration: 2s;  /*isske use se kitne der ka transition krna hai or smoth transition ke liye use hota hia*/
+    transition-delay: 1s;  /*isse kitne der bad transition effect strt krna hai*/
+}
+
+#transition-effect:hover{
+    width:30%;
+    height:30%;
+    background-color: red;
+}
+
+/*Animation Effect*/
+@keyframes anieffect{
+    0%{background-color:yellow; width:19%; height:19% }
+    15%{ background-color:red; width:17%; height:17% }
+    30%{ background-color:blue; width:10%; height:10% }
+    60%{ background-color:palevioletred; width:6%; height:6% }
+    80%{ background-color:yellowgreen; width:2%; height:2% }
+    100%{ background-color:turquoise; width:1%; height:1% } 
+}
+
+#animation-effect{
+    margin:10%;
+    width:20%;
+    height:20%;
+    background-color:teal;
+    border-radius: 130px;
+    animation-name: anieffect;
+    animation-duration: 3s;
+    animation-iteration-count:2 ; /*how much time animation run*/
+}
+
+#viewport-effect{
+    font-size: large;
+}
+
+/*media queriy for responsive web page*/
+#reponsive-effect{
+    font: 100px solid;
+    background-color:blueviolet;
+    width:50%;
+    height:200px;
+    float:left;
+}
+
+#responsive-effect1{
+    font: 100px solid;
+    background-color:chocolate;
+    width:50%;
+    height:200px;
+    float:right;
+}
+
+@media screen and (max-width:500px) {
+    #reponsive-effect{
+        width:100%;
+        font: 100px;
+        background-color:greenyellow;
+        color:brown;
+    }
+
+    #responsive-effect1{
+        width:100%;
+        font:100px;
+        background-color:black;
+        color:aliceblue; 
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+    video{
+        width:100%;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    #responsive-effect{
+        width:100%;
+        font:100px;
+        background-color:blue;
+        color:brown;
+    }
+
+    #responsive-effect1{
+        width:100%;
+        font:100px;
+        background-color:palevioletred;
+        color:aliceblue;
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+    video{
+        width:100%;
+        height:auto;
+    }
+}
+
+/*few more advance selector*/
+a[href="http//www.instagram.com"]{      /*Attribute selector*/
+    font-size: 80px;
+    color:yellowgreen;
+    text-decoration: none;
+}
+
+li[name="attribute-list"]{
+    color: palevioletred;
+    font-size:30px;
+}
+
+*{
+    /*this is universal selector give propty like change colour or fount size and this proprty apply in fuul pagee */
+    /*this is basiclly used for debugging in code & it is rarelly used.*/
+}
+
+/*Congniator selector : 1. Adjscent selector: tags which are in same line are called sibling, direct child means jo direct kisi tag ke andar hoge, non-direct child jo kisi tag ke tag ke ander hoge*/
+
+div ul{                 /*Adjscent selector*/
+    color: yellow;
+}
+
+div>a{
+    text-decoration: none;      /*direct child*/
+}
+
+div + h1{  /*just sibling: jo tag just bad me aat hai like div ke bad just h1 aarh hai*/
+    color: palevioletred;
+}  
+
+h1 ~ p{   /*simple sibling*/
+    /*color:blueviolet; */
+}
+
+h1, p{      /*add selector: multiple item ko ek sath edit krna ho to iss selector ka use krte hai*/ 
+   /* color: skyblue;*/
+}
+
+/*Multiple coloum*/
+#coloum-effect{
+    column-span:all; /*used to upper of all column*/
+}
+
+#coloum-effect-id{
+    column-count:4;  /*to divide paragraph into 4 equal part*/
+    column-gap:5px;
+    /*column-rule-style:solid;*/ /*column rule used for style in width, seprator, color between all column*/
+    /*column-rule-width:2px;
+    column-rule-color:red;*/
+    column-rule:2px solid red; /*also use in one line*/
+}
+
+/*flex effect*/
+#flex-parent{
+    
+    height:500px;
+    background-color:indianred;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    align-content:center;
+}
+
+.flex-class{
+    width:100px;
+    height:50px;
+    padding:20px;
+    margin:20px;
+    background-color:yellowgreen;
+    text-align:center;
+}
+
+#one{
+    align-self:flex-start;
+}
+
+#two{
+    flex-grow:start;
+}
+
+#three{
+    flex-grow:flex-end;
+}
+
+/* IMPORTANT:  Grid concept for responsie wesite*/
+#grid-parent{       /*div container id*/
+    background-color:rosybrown;
+    margin:20px;
+    padding:20px;
+    display:grid;
+    /*grid-template-columns:100px 100px 100px;*/
+    /*grid-template-rows:100px 100px 100px;*/
+    /*grid-columns-gap:20px;
+    grid-row-gap: 20px;
+    justify-content:space-around;*/
+    height:400px;
+    align-content:center;
+    grid-gap:10px;
+}
+
+.grid-class{        /*container all item class*/
+    background-color:aquamarine;
+    padding:20px;
+    text-align: center;
+    font-size:40px solid;
+    border:1px solid black;
+}
+
+#grid-one{
+ /*   grid-column-start:1;
+    grid-column-end: 4;*/
+    /*grid-column:1/2 or 1 / span 3*/
+    grid-row-start:2;
+    grid-row-end:6;    
+}
+
+#grid-two{
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
+#grid-three{
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+#grid-four{
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+#grid-five{
+    grid-column-start:2;
+    grid-column-end:4;
+}
+
+
+
+

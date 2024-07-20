@@ -1,0 +1,206 @@
+.form-border{
+    border:1px solid rgb(186, 173, 173);
+    border-radius: 5px;
+    padding:5px;
+}
+
+#side-bar-container{
+    border:0.01px solid rgb(207, 198, 198);
+    border-radius:5px;
+    padding:5px;
+    width:20%;
+    box-shadow: 0px 0px 10px 2px #d9d6d6;
+}
+
+/* @media screen and (min-width:1357px){
+    #side-bar-container{
+        width:30%;
+    }
+
+    #main-content-container{
+        width:70%;
+    }
+
+    #resume-image{
+        width:70%;
+        height:30%;
+        margin:0 auto;
+        display:block;
+    } 
+}
+
+@media screen and (min-width:808px){
+    #side-bar-container{
+        width:30%;
+    }
+
+    #main-content-container{
+        width:70%;
+    }
+
+    #resume-image{
+        width:70%;
+        height:30%;
+        margin:0 auto;
+        display:block;
+    }
+} */
+
+#resume-image{
+    margin:0px 40px;
+    border-radius:83px;
+    border:0.8px solid rgb(225, 220, 220);
+    box-shadow:0px 0px 10px 0.2px rgb(215, 211, 211);
+}
+
+#resume-image:hover{
+    mask-image: url(image.jpeg);
+    transition-duration: 1s;
+    transition-property: all;
+    cursor:copy;
+}
+
+.skill-container-class{
+    width:100%;
+    background-color:rgb(223, 219, 219);
+    border-radius:20px;
+    text-align: center;
+    height:15px;
+    box-shadow:0px 0px 10px 0.2px rgb(215, 211, 211); 
+}
+
+#Python{
+    width:60%;
+    height:15px;
+    background-color:#4CAF50;
+    border-radius:20px;
+}
+
+#MySql{
+    width:90%;
+    height:15px;
+    background-color:#4CAF50;
+    border-radius:20px;
+}
+
+#PHP{
+    width:100%;
+    height:15px;
+    background-color:#4CAF50;
+    border-radius:20px;
+}
+
+#HTML{
+    width:95%;
+    height:15px;
+    background-color:#4CAF50;
+    border-radius:20px;
+}
+
+#Shopify{
+    width:70%;
+    height:15px;
+    background-color:#4CAF50;
+    border-radius:20px;
+}
+
+.professional-strength-class{
+    width:100%;
+    background-color:rgb(223, 219, 219);
+    border-radius:20px;
+    text-align: center;
+    height:15px;
+    box-shadow:0px 0px 10px 0.2px rgb(215, 211, 211); 
+}
+
+#smart{
+    width:100%;
+    height:15px;
+    background-color: #4CAF50;
+    border-radius:20px;
+    color:aliceblue;
+    
+}
+
+#Commitment{
+    width:90%;
+    height:15px;
+    background-color: #4CAF50;
+    border-radius:20px;
+    color:aliceblue;
+}
+
+#Passion{
+    width:95%;
+    height:15px;
+    background-color: #4CAF50;
+    border-radius:20px;
+    color:aliceblue;
+}
+
+#Networking{
+    width:80%;
+    height:15px;
+    background-color: #4CAF50;
+    border-radius:20px;
+    color:aliceblue;
+}
+
+#Resilience{
+    width:70%;
+    height:15px;
+    background-color: #4CAF50;
+    border-radius:20px;
+    color:aliceblue;
+}
+
+.header-container{
+    border:2px;
+    background-color:#4CAF50;
+    float:clear;
+}
+
+.flex-container{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+#main-content-container{
+    width:80%;
+    padding:5px;
+    margin:2px;
+    border:0.01px solid rgb(207, 198, 198);
+    border-radius:5px;
+    background-color:#ffffff;
+    box-shadow: 0px 0px 10px 2px #d9d6d6;
+}
+
+.candidate-name{
+    font-size:50px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heading-color{
+    color:#4CAF50;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.seperator-color{
+    width:100%;
+    height:4px;
+    background-color:#4CAF50;
+    margin-top: -20px;
+}
+
+
+
+
+
+
+
